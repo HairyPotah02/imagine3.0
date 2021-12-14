@@ -27,10 +27,14 @@ welcome_group = 2
 
 __MODULE__ = "Essentials"
 __HELP__ = """
+
+
 /start
 - Start the Bot.
+
 /help
 - Get Commands Helper Menu.
+
 /settings
 - Get Settings DashBoard.
 """
@@ -476,5 +480,5 @@ async def start_markup_check(_, CallbackQuery):
     if command == "DIT":
         diske = psutil.disk_usage("/").percent
         await CallbackQuery.answer(
-            f"Waldo Disk Usage: {diske}%", show_alert=True
+            f"Yukki Disk Usage: {diske}%", show_alert=True
         )

@@ -36,7 +36,6 @@ async def start_stream(
             .replace("_", "", 1)
             .replace("/", "", 1)
             .replace(".", "", 1)
-            .replace("\", "", 1)
         )
         buttons = secondary_markup(videoid, CallbackQuery.from_user.id)
         if file not in db_mem:
@@ -184,7 +183,7 @@ async def start_stream_audio(
             duration_min,
             duration_sec,
             final_output,
-            CallbackQuery.message.chat.id,
-            CallbackQuery.from_user.id,
+            message.chat.id,
+            message.from_user.id,
             1,
         )

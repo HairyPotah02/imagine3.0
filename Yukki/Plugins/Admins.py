@@ -34,19 +34,19 @@ __MODULE__ = "Voice Chat"
 __HELP__ = """
 
 
-/wait
+/pause
 - Pause the playing music on voice chat.
 
-/tuloy
+/resume
 - Resume the paused music on voice chat.
 
-/next
+/skip
 - Skip the current playing music on voice chat
 
-/byebye or /gelai
+/end or /stop
 - Stop the playout.
 
-/playlist
+/queue
 - Check queue list.
 
 
@@ -60,7 +60,7 @@ Only for Sudo Users
 
 
 @app.on_message(
-    filters.command(["wait", "next", "tuloy", "byebye", "gelai"])
+    filters.command(["pause", "skip", "resume", "stop", "end"])
     & filters.group
 )
 @AdminRightsCheck
