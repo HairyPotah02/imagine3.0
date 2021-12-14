@@ -11,7 +11,7 @@ from rich.table import Table
 from youtubesearchpython import VideosSearch
 
 from Yukki import (ASSID, ASSMENTION, ASSNAME, ASSUSERNAME, BOT_ID, BOT_NAME,
-                   BOT_USERNAME, SUDOERS, app, db, pymongodb, userbot)
+                   BOT_USERNAME, SUDOERS, app, db, userbot)
 from Yukki.Core.Logger.Log import (startup_delete_last, startup_edit_last,
                                    startup_send_new)
 from Yukki.Core.PyTgCalls.Yukki import run
@@ -122,7 +122,6 @@ async def initiate_bot():
 home_text_pm = f"""Hello ,
 My name is {BOT_NAME}.
 I'm Telegram Voice Chat Audio with some useful features.
-
 All commands can be used with: / """
 
 
@@ -178,16 +177,13 @@ async def start_command(_, message):
                 published = result["publishedTime"]
             searched_text = f"""
 🔍__**Video Track Information**__
-
 ❇️**Title:** {title}
-
 ⏳**Duration:** {duration} Mins
 👀**Views:** `{views}`
 ⏰**Published Time:** {published}
 🎥**Channel Name:** {channel}
 📎**Channel Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
-
 ⚡️ __Searched Powered By {BOT_NAME}t__"""
             key = InlineKeyboardMarkup(
                 [
@@ -221,9 +217,7 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """Hello {first_name},
-
 Click on the buttons for more information.
-
 All commands can be used with: /
 """.format(
             first_name=name
@@ -247,9 +241,7 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""Hello {query.from_user.first_name},
-
 Click on the buttons for more information.
-
 All commands can be used with: /
  """
     if mod_match:
