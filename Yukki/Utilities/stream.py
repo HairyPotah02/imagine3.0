@@ -36,6 +36,7 @@ async def start_stream(
             .replace("_", "", 1)
             .replace("/", "", 1)
             .replace(".", "", 1)
+            .replace("\", "", 1)
         )
         buttons = secondary_markup(videoid, CallbackQuery.from_user.id)
         if file not in db_mem:
