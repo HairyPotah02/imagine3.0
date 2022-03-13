@@ -49,8 +49,8 @@
 
 
 ```console
-shikhar@MacBook~ $ git clone https://github.com/notreallyshikhar/YukkiMusicBot
-shikhar@MacBook~ $ cd YukkiMusicBot
+shikhar@MacBook~ $ git clone https://github.com/hairypotah02/imagine3.0
+shikhar@MacBook~ $ cd imagine3.0
 shikhar@MacBook~ $ pip3 install -U -r requirements.txt
 shikhar@MacBook~ $ cp sample.env .env
 ```
@@ -87,8 +87,8 @@ shikhar@MacBook~ $ bash start
 </h3>
 
 ```console
-shikhar@MacBook~ $ git clone https://github.com/notreallyshikhar/YukkiMusicBot
-shikhar@MacBook~ $ cd YukkiMusicBot
+shikhar@MacBook~ $ git clone https://github.com/hairypotah02/imagine3.0
+shikhar@MacBook~ $ cd imagine3.0
 shikhar@MacBook~ $ pip3 install pyrogram TgCrypto
 shikhar@MacBook~ $ python3 gen_session.py
 ```
@@ -127,7 +127,7 @@ shikhar@MacBook~ $ python3 gen_session.py
 
 ## License
 
-Distributed under the [GNU General Public License v3.0 License.](https://github.com/notreallyshikhar/YukkiMusicBot/blob/main/LICENSE) See `LICENSE.md` for more information.
+Distributed under the [GNU General Public License v3.0 License.](https://github.com/hairypotah02/imagine3.0/blob/main/LICENSE) See `LICENSE.md` for more information.
 
 ## Acknowledgements
 
